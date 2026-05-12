@@ -6,6 +6,7 @@ export interface Exercise {
   nameEn: string
   nameTh: string
   category: ExerciseCategory
+  muscleGroup: string
   difficulty: Difficulty
   primaryMuscles: string[]
   secondaryMuscles: string[]
