@@ -75,6 +75,18 @@ export default function ExerciseDetail({ exerciseId, onNavigate, onStartTimer }:
 
       <div className="px-4 space-y-5 mt-4">
 
+        {/* ── Exercise Illustration ────────────────────────── */}
+        {ex.image && (
+          <section className="bg-white rounded-2xl border border-gray-100 overflow-hidden">
+            <img
+              src={ex.image.startsWith('http') ? ex.image : `/exercises/${ex.id}.jpg`}
+              alt={ex.nameEn}
+              className="w-full object-cover max-h-56"
+              onError={e => { (e.currentTarget as HTMLImageElement).parentElement!.style.display = 'none' }}
+            />
+          </section>
+        )}
+
         {/* ── Muscle Diagram ───────────────────────────────── */}
         <section className="bg-white rounded-2xl border border-gray-100 p-4">
           <h2 className="font-semibold text-gray-800 mb-4">กล้ามเนื้อที่ใช้</h2>

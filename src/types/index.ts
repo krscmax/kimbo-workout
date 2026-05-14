@@ -17,6 +17,7 @@ export interface Exercise {
   setsReps: string
   restSeconds: number
   caloriesPerMin?: number
+  image?: string        // path under /exercises/{id}.jpg  or  https:// url
 }
 
 export interface WeightEntry {
