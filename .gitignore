@@ -4,4 +4,5 @@ dist
 *.local
 gen-icons.mjs
 generate-exercise-images.mjs
+fetch-exercise-gifs.mjs
 .vercel
