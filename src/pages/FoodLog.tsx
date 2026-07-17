@@ -397,7 +397,7 @@ export default function FoodLog() {
             </div>
           </div>
         </div>
-        <div className="px-5 pt-3 pb-6 border-t border-[#f0f1ee] bg-[#fbfbf9]">
+        <div className="px-5 pt-3 pb-24 border-t border-[#f0f1ee] bg-[#fbfbf9]">
           <button
             onClick={addEntry}
             className="w-full py-4 rounded-2xl bg-[#2f6d3f] text-white text-[15.5px] font-bold"
@@ -450,7 +450,7 @@ export default function FoodLog() {
             ))}
           </div>
         </div>
-        <div className="px-5 pt-3 pb-6 border-t border-[#f0f1ee]">
+        <div className="px-5 pt-3 pb-24 border-t border-[#f0f1ee]">
           <button
             onClick={saveCustom}
             className="w-full py-4 rounded-2xl bg-[#2f6d3f] text-white text-[15.5px] font-bold disabled:opacity-40"
@@ -626,7 +626,7 @@ export default function FoodLog() {
             ใช้สูตร Mifflin-St Jeor · เป็นค่าประมาณ ใช้เป็นจุดเริ่มต้นแล้วปรับตามผลจริงได้
           </div>
         </div>
-        <div className="px-5 pt-3 pb-6 border-t border-[#f0f1ee]">
+        <div className="px-5 pt-3 pb-24 border-t border-[#f0f1ee]">
           <button
             onClick={applyTdee}
             className="w-full py-4 rounded-2xl bg-[#2f6d3f] text-white text-[15.5px] font-bold"
