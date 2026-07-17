@@ -6,6 +6,7 @@ import ExerciseDetail from './pages/ExerciseDetail'
 import WorkoutPlan from './pages/WorkoutPlan'
 import Progress from './pages/Progress'
 import TimerPage from './pages/TimerPage'
+import FoodLog from './pages/FoodLog'
 import type { Page } from './types'
 
 export default function App() {
@@ -39,6 +40,7 @@ export default function App() {
         {page === 'plan' && <WorkoutPlan onNavigate={navigate} />}
         {page === 'progress' && <Progress />}
         {page === 'timer' && <TimerPage initialSeconds={timerSeconds} />}
+        {page === 'food' && <FoodLog />}
       </div>
       <BottomNav current={page} onChange={p => navigate(p)} />
     </div>

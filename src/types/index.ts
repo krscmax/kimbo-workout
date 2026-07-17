@@ -33,4 +33,46 @@ export interface WorkoutDay {
   exerciseIds: string[]
 }
 
-export type Page = 'home' | 'exercises' | 'detail' | 'plan' | 'progress' | 'timer'
+export type Page = 'home' | 'exercises' | 'detail' | 'plan' | 'progress' | 'timer' | 'food'
+
+// ---- Food / calorie tracking ----
+export interface MacroVals {
+  kcal: number
+  protein: number
+  carb: number
+  fat: number
+  sugar: number
+}
+
+export type FoodCategory = 'meat' | 'carb' | 'dish' | 'veg' | 'fruit' | 'other' | 'custom'
+export type MealKey = 'breakfast' | 'lunch' | 'dinner' | 'snack'
+
+export interface FoodItem {
+  id: string
+  name: string
+  cat: FoodCategory
+  serving: number
+  raw?: MacroVals
+  cooked?: MacroVals
+}
+
+export interface FoodEntry extends MacroVals {
+  id: string
+  foodId: string
+  name: string
+  meal: MealKey
+  grams: number
+  cooked: boolean
+  hasState: boolean
+}
+
+export interface FoodGoals extends MacroVals {}
+
+export interface TdeeParams {
+  sex: 'male' | 'female'
+  age: number
+  height: number
+  weight: number
+  activity: 'sedentary' | 'light' | 'moderate' | 'active' | 'vhard'
+  aim: 'lose' | 'maintain' | 'gain'
+}

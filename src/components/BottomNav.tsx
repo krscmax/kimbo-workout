@@ -8,6 +8,7 @@ interface Props {
 const items: { page: Page; icon: string; label: string }[] = [
   { page: 'home', icon: '🏠', label: 'หน้าหลัก' },
   { page: 'exercises', icon: '💪', label: 'ท่า' },
+  { page: 'food', icon: '🍚', label: 'อาหาร' },
   { page: 'plan', icon: '📅', label: 'แผน' },
   { page: 'progress', icon: '📊', label: 'Progress' },
   { page: 'timer', icon: '⏱', label: 'Timer' },
